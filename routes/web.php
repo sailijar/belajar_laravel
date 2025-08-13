@@ -30,10 +30,5 @@ Route::get('/cektemplate', function(){
      return view('dosen.index');
  });
 
-Route::get('/dosen', [DosenController::class, 'index']);
-Route::get('/dosen/form', [DosenController::class, 'create']);
-Route::post('/dosen', [DosenController::class, 'store']);
-Route::get('/dosen/edit/{id}', [DosenController::class, 'edit']);
-Route::put('/dosen/{id}', [DosenController::class, 'update']);
-Route::delete('/dosen/{id}', [DosenController::class, 'destroy']);
+    
 
